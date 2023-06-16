@@ -15,16 +15,14 @@ BreachType classifyTemperatureBreach(
     CoolingType coolingType, double temperatureInC) {
   int lowerLimit = 0;
   int upperLimit = 0;
-  switch(coolingType) {
-    case PASSIVE_COOLING:
-      upperLimit = 35;
-      break;
-    case HI_ACTIVE_COOLING:
-      upperLimit = 45;
-      break;
-    case MED_ACTIVE_COOLING:
-      upperLimit = 40;
-      break;
+  if(coolingType == PASSIVE_COOLING) {
+    upperLimit = 35;
+  }
+  else if(coolingType == HI_ACTIVE_COOLING) {
+    upperLimit = 45;
+  }
+  else {
+    upperLimit = 40;
   }
   return inferBreach(temperatureInC, lowerLimit, upperLimit);
 }
