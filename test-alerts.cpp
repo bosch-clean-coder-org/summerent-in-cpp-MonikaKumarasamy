@@ -15,4 +15,12 @@ TEST_CASE("infers the breach according to limits2") {
 TEST_CASE("Return value depends on type of cooling") {
   REQUIRE(classifyTemperatureBreach(PASSIVE_COOLING, 12) == inferBreach(12,0,35));
 }
+TEST_CASE("Return value depends on type of cooling1") {
+  REQUIRE(classifyTemperatureBreach(HI_ACTIVE_COOLING, 12) == inferBreach(12,0,45));
+}
+TEST_CASE("Return value depends on type of cooling2") {
+  REQUIRE(classifyTemperatureBreach(MED_ACTIVE_COOLING, 12) == inferBreach(12,0,40));
+}
+
+
 
