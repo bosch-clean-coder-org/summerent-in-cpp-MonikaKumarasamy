@@ -21,5 +21,11 @@ TEST_CASE("Return value depends on type of cooling1") {
 TEST_CASE("Return value depends on type of cooling2") {
   REQUIRE(classifyTemperatureBreach(MED_ACTIVE_COOLING, 12) == inferBreach(12,0,40));
 }
-sendToController(TOO_LOW);
+TEST_CASE("Return value depends on type of cooling2") {
+  REQUIRE(classifyTemperatureBreach(MED_ACTIVE_COOLING, 12) == inferBreach(12,0,40));
+}
+TEST_CASE("Prints messages") {
+  sendToController(TOO_LOW);
+}
+//sendToController(TOO_LOW);
 
