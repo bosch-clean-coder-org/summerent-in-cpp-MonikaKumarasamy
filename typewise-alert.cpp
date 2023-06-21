@@ -10,7 +10,6 @@ BreachType inferBreach(double value, double lowerLimit, double upperLimit) {
   }
   return NORMAL;
 }
-
 BreachType classifyTemperatureBreach(
     CoolingType coolingType, double temperatureInC) {
   int lowerLimit = 0;
