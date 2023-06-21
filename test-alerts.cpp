@@ -33,4 +33,7 @@ TEST_CASE("Prints message 3") {
 TEST_CASE("Print message 4") {
   sendToEmail(TOO_HIGH);
 }
+TEST_CASE("Print message 5") {
+  checkAndAlert(TO_CONTROLLER, batteryChar.coolingType, 12);
+}
 
