@@ -1,11 +1,4 @@
 #pragma once
-
-typedef enum {
-  PASSIVE_COOLING,
-  HI_ACTIVE_COOLING,
-  MED_ACTIVE_COOLING
-} CoolingType;
-
 typedef enum {
   NORMAL,
   TOO_LOW,
@@ -26,6 +19,11 @@ typedef struct {
   CoolingType coolingType;
   char brand[48];
 } BatteryCharacter;
+typedef enum {
+  PASSIVE_COOLING,
+  HI_ACTIVE_COOLING,
+  MED_ACTIVE_COOLING
+} CoolingType;
 
 void checkAndAlert(
   AlertTarget alertTarget, BatteryCharacter batteryChar, double temperatureInC);
