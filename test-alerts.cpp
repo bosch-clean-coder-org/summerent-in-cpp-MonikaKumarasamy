@@ -35,10 +35,10 @@ TEST_CASE("Print message 4") {
 }
 
 TEST_CASE("Print message 5") {
-  BatteryCharacter batt;
+  BatteryCharacter batterychr;
   checkAndAlert(TO_CONTROLLER,batt,12);
 }
 TEST_CASE("Print message 6") {
-  BatteryCharacter batterychr
+  BatteryCharacter batterychr;
   checkAndAlert(TO_EMAIL,batterychr,45);
 }
