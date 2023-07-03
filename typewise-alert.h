@@ -30,4 +30,4 @@ void sendToController(BreachType breachType);
 void sendToEmail(BreachType breachType);
 #ifdef TEST-ALERTS
 FRIEND_TEST(test-alerts, Print message 5);
-#endif
+#endif //TEST-ALERTS
