@@ -38,3 +38,7 @@ TEST_CASE("Print message 5") {
   BatteryCharacter batt;
   checkAndAlert(TO_CONTROLLER,batt,12);
 }
+TEST_CASE("Print message 6") {
+  BatteryCharacter batt;
+  checkAndAlert(TO_EMAIL,batt,45);
+}
