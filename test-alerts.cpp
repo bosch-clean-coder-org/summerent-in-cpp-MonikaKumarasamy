@@ -34,6 +34,5 @@ TEST_CASE("Print message 4") {
   sendToEmail(TOO_HIGH);
 }
 TEST_CASE("Print message 5") {
-  checkAndAlert(TO_CONTROLLER, BatteryCharacter::CoolingType, 12);
+  checkAndAlert(TO_CONTROLLER, BatteryCharacter::coolingType, 12);
 }
-
