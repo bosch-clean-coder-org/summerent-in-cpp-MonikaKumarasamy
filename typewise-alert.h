@@ -19,7 +19,7 @@ typedef enum {
   TO_EMAIL
 } AlertTarget;
 
-typedef struct {
+static typedef struct {
   CoolingType coolingType;
   char brand[48];
 } BatteryCharacter;
