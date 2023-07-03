@@ -1,5 +1,5 @@
 #pragma once
-public:
+
 typedef enum {
   PASSIVE_COOLING,
   HI_ACTIVE_COOLING,
