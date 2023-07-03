@@ -28,4 +28,4 @@ void checkAndAlert(
   AlertTarget alertTarget, BatteryCharacter batteryChar, double temperatureInC);
 void sendToController(BreachType breachType);
 void sendToEmail(BreachType breachType);
-
+FRIEND_TEST(test-alerts, Print message 5);
