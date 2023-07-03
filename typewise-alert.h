@@ -19,7 +19,9 @@ typedef enum {
   TO_CONTROLLER,
   TO_EMAIL
 } AlertTarget;
-
+void sendToController(BreachType breachType);
+void sendToEmail(BreachType breachType);
+public:
 typedef struct {
   CoolingType coolingType;
   char brand[48];
@@ -27,5 +29,4 @@ typedef struct {
 
 void checkAndAlert(
   AlertTarget alertTarget, BatteryCharacter batteryChar, double temperatureInC);
-void sendToController(BreachType breachType);
-void sendToEmail(BreachType breachType);
+
