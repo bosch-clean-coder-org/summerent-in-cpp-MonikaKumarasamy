@@ -33,7 +33,8 @@ TEST_CASE("Prints message 3") {
 TEST_CASE("Print message 4") {
   sendToEmail(TOO_HIGH);
 }
-BatteryCharacter batt
+
 TEST_CASE("Print message 5") {
+  BatteryCharacter batt;
   checkAndAlert(TO_CONTROLLER, batt.coolingType = PASSIVE_COOLING, 12);
 }
