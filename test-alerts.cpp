@@ -36,5 +36,5 @@ TEST_CASE("Print message 4") {
 
 TEST_CASE("Print message 5") {
   BatteryCharacter batt;
-  checkAndAlert(TO_CONTROLLER,BatteryCharacter,12);
+  checkAndAlert(TO_CONTROLLER,batt,12);
 }
