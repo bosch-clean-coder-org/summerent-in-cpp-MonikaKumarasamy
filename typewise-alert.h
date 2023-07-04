@@ -5,7 +5,6 @@ typedef enum {
   HI_ACTIVE_COOLING,
   MED_ACTIVE_COOLING
 } CoolingType;
-
 typedef enum {
   NORMAL,
   TOO_LOW,
@@ -27,6 +26,5 @@ typedef struct {
 
 void checkAndAlert(
   AlertTarget alertTarget, BatteryCharacter batteryChar, double temperatureInC);
-
 void sendToController(BreachType breachType);
 void sendToEmail(BreachType breachType);
